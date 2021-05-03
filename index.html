@@ -1,0 +1,2005 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Javascript</title>
+    <style>
+        .head {
+            background-color: aqua;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .new {
+            background-color: aqua;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+        }
+        
+        .sub_new {
+            background-color: rgb(94, 250, 255);
+            text-align: center;
+            font-size: larger;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #dibba {
+            width: 99vw;
+            height: 10vh;
+            background-color: black;
+        }
+        
+        .effectKeyB~.focus-border {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: aqua;
+        }
+        
+        .effectKeyB:focus~.focus-border {
+            width: 100%;
+            transition: 0.4s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- --------------- Day 1 Ends Here------------------------------------------------------- -->
+
+    <h1>Expressions and Operators</h1>
+    <!-- --------------- Day 2 Ends Here------------------------------------------------------- -->
+
+    <h1>Control Statements & Loops</h1>
+    <!-- --------------- Day 3 Ends Here------------------------------------------------------- -->
+
+    <h1>Control Statements and Loops 2</h1>
+    <!-- --------------- Day 4 Ends Here------------------------------------------------------- -->
+
+    <h1>Functions in JavaScript</h1>
+    <!-- --------------- Day 5 Ends Here------------------------------------------------------- -->
+
+    <h1>Modern Javascript</h1>
+    <!-- --------------- Day 6 Ends Here------------------------------------------------------- -->
+
+    <h1>Arrays</h1>
+    <!-- --------------- Day 7 Ends Here------------------------------------------------------- -->
+
+    <h1>Arrays 2</h1>
+    <!-- --------------- Day 8 Ends Here------------------------------------------------------- -->
+
+    <h1>Strings in JavaScript</h1>
+    <!-- --------------- Day 9 Ends Here------------------------------------------------------- -->
+
+    <h1>Date and Time</h1>
+
+    <p>Click The BTN to Display</p>
+
+    <button onclick="functionDate()">Let's Try</button>
+    <!-- wait What is onclick? -->
+    <!-- onclick (events) ka time aayega! you will learn there-->
+
+    <p id="demo"></p>
+    <p id="time"></p>
+    <p id="dateTryO"></p>
+    <!-- --------------- Day 10 Ends Here------------------------------------------------------- -->
+
+    <h1>Math Object in JS</h1>
+    <!-- --------------- Day 11 Ends Here------------------------------------------------------- -->
+
+    <h1>DOM In JS</h1>
+
+    <h1 class="head">
+        New Topic
+    </h1>
+
+    <ul>
+        <li>HTML</li>
+        <li class="web-class">CSS</li>
+        <li class="web-class">JavaScript</li>
+        <li id="web-id">PHP</li>
+    </ul>
+
+
+
+    <h1 class="head">
+        New Topic
+    </h1>
+    <button id="btn_back" onclick="picheChalo()">Go Back</button>
+
+    <p>Notice that clicking on the back button here will redirect you to previous page</p>
+
+    <div class="main">
+        <div class="one">
+            <p>I am One</p>
+        </div>
+        <div class="two">
+            <p>I am Two</p>
+        </div>
+        <div class="three">
+            <p>I am Three</p>
+        </div>
+    </div>
+    <!-- try this in console section => :)
+    document 
+    Enter ke button par Click Karo!
+    pura ka pura Data nikal ke aayega dekho jara!
+    -->
+
+    <h1 class="head">
+        New Topic
+    </h1>
+
+    <p class="para">Hello! This is JavaScript</p>
+    <p class="para">We are in DOM Section right now</p>
+    <p id="paraGraph">Continue this</p>
+
+    <button onclick="changeContent()">Let's Change</button>
+    <!-- --------------- Day 12 Ends Here------------------------------------------------------- -->
+
+    <h1>Events In JavaScript</h1>
+
+    <div class="content">
+        <h1>Diffrent Events Types In JavaScript</h1>
+        <div class="btn_contain">
+            <div class="btn_sub">
+                <span class="btn_circle"></span>
+                <!-- I am rarely used -->
+                <a href="" class="btn_inner-part" onclick="alert('I am Useless')"><span class="btn_txt_contain">Simple
+                        Inline alert()</span></a>
+            </div>
+
+            <div class="btn_sub">
+                <span class="btn_circle"></span>
+                <!-- Everyone Loves me -->
+                <a href="" class="btn_inner-part" onclick="callKaro()"><span class="btn_txt_contain">By Calling
+                        Function</span></a>
+            </div>
+
+            <div class="btn_sub">
+                <span class="btn_circle"></span>
+                <!-- third way by ID -->
+                <a href="" class="btn_inner-part" id="callID"><span class="btn_txt_contain">Inline Event</span></a>
+            </div>
+
+            <div class="btn_sub">
+                <span class="btn_circle"></span>
+                <!-- fourth way by Event Listner -->
+                <a href="" class="btn_inner-part" id="caller"><span class="btn_txt_contain">Event Listners</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="new">
+        New Topic:Event Object
+    </div>
+    <div class="sec2">
+        <div class="btn_sub">
+            <span class="btn_circle"></span>
+            <a href="" class="btn_inner-part" id="event_listen"><span class="btn_txt_contain">Event Listners</span></a>
+        </div>
+    </div>
+
+    <div class="new">
+        New Topic: MouseEvent
+    </div>
+
+    <div class="sub_new">
+        New Sub-Topic: mouseDown and mouseUp
+    </div>
+
+    <p id="eventPara" onmousedown="mouseDown()" onmouseup="mouseUp()">
+        click the text. The mouseDown() funcion is triggered when the mouse btn is pressed down over this paragraph, and sets the color of the text to red the mouseUp() function is triggered when the mouse btn is released and sets the color of the text to green
+    </p>
+
+    <div class="sub_new">
+        New Sub-Topic: mouseenter and mouseleave
+    </div>
+
+    <div id="dibba">
+    </div>
+
+    <div class="new">
+        New Topic: KeyboardEvent
+    </div>
+
+    <div class="div_main">
+        <div>
+            <p>A function is triggered when user is pressing a key in input field</p>
+            <br>
+            <input type="text" class="effectKeyB" onkeypress="keyPressed()" onkeydown="keyDown()" onkeyup="keyUp()">
+            <br>
+            <p id="keys"></p>
+        </div>
+    </div>
+
+    <div class="new">
+        New Topic: InputEvents
+    </div>
+
+    <div class="inputEvent">
+        <div>
+            <label for="">Your Name</label>
+            <input type="text" name="" id="icec">
+            <br>
+            <label>Choose an Ice-cream Flavour
+                <select name="iceCream" id="iceCreams" onchange="changeFlav()">
+                    <option value="">Select One of Them</option>
+                    <option value="choco">Chocolate</option>
+                    <option value="Aam">Mango</option>
+                    <option value="santra">Orange</option>
+                </select>
+            </label>
+            <br>
+            <div id="selFav">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------- Day 13 Ends Here------------------------------------------------------- -->
+
+    <div class="setTimeOut">
+        <div>
+            <p>Do You Want to Know My Name</p>
+            <p id="revelName"></p>
+            <br>
+            <button id="showName">Click Here</button>
+        </div>
+    </div>
+
+    <div class="clearTimeout">
+        <div>
+            <p>Click "Try it" Wait 3 seconds. The page will alert "Working! its working"</p>
+            <p>Click "Stop" to prevent the first to execute</p>
+            <p>(You must click "stop" before the 2 seconds are up)</p>
+
+            <button onclick="timeEvent= setTimeout(timeFunction, 2000)">Try It</button>
+            <button onclick="clearTimeout(timeEvent)">Stop</button>
+        </div>
+    </div>
+
+    <div class="setInterval">
+        <div>
+            <p>Can you stop me When I reach the no. 5 ?</p>
+            <br>
+            <button id="stopMe">STOP</button>
+        </div>
+    </div>
+
+    <!-- !!!Here is this part remaining !!!  -->
+    <!-- --------------- Day 14 Ends Here------------------------------------------------------- -->
+
+</body>
+<script type="text/javascript">
+    var suraj = "Surya";
+    console.log(suraj);
+
+    //Type of varible
+    //1. String
+    console.log(typeof(suraj));
+
+    //2. Number
+    var ageBolo = 16;
+    console.log(ageBolo);
+    console.log(typeof(ageBolo));
+
+    //3. Boolean
+    var iAmProgrammer = true;
+    console.log(iAmProgrammer);
+    console.log(typeof(iAmProgrammer));
+    // Boolean is either True or False
+
+
+    //Data Types
+    //Try The Following:
+
+    console.log(20 + "21");
+    console.log(9 - "5"); //BUG Found
+    console.log("Openix" + "Developer");
+    console.log("" + "");
+    console.log("" + 0);
+    console.log("Tech" - "Surya");
+    console.log(true + true);
+    //false = 0
+    //true  = 1
+
+    console.log(true + false);
+    console.log(false + false);
+    console.log(false - true);
+
+    // INTERVIEW QUESTION 1
+    // Diffrence Between Null vs undefined
+
+    var berojgar = null;
+    console.log(berojgar);
+    console.log(typeof(berojgar));
+
+    var badeLog;
+    console.log(badeLog);
+    console.log(typeof(badeLog));
+
+    //INTERVIEW QUESTION 2
+    //What is NaN?
+
+    // => NaN is a property of the global object
+    // In other words, it is a varible in Global Scope
+    //The intial value of NaN is Not- A- Number
+    //Example => |
+
+    var meraMobileNo = 1223344556;
+    var meraNaam = "You Know";
+
+    console.log(isNaN(meraMobileNo));
+    console.log(isNaN(meraNaam));
+
+    if (isNaN(meraNaam)) {
+        console.log("Please Enter the Valid Mobile No.")
+    }
+
+    // Challenge Time 1
+
+    NaN === NaN; // Result = False
+    Number.NaN === NaN; // Result = False
+    isNaN(NaN); // Result = True
+    isNaN(Number.NaN); // Result = True
+    Number.isNaN(NaN); // Result = False
+
+    console.log(isNaN(Number.isNaN(NaN)));
+
+    // --------------- Day 1 Ends Here-------------------------------------------------------
+
+    // 1.Assignment Opertors
+    // An Assignment Operators assigns a value to its operand
+    // based on the value of its right operand.
+    // The Simple Assignment Operator is equal (=)
+
+    var x = 5;
+    var y = 5;
+
+    console.log("Is both x and y are equal " + x == y);
+    // It will be taken in ES 6   JUMP TO LINE===
+    console.log('Is both x and y are equal: ${x== y}');
+
+    // Arithmetic Operators 
+    // An Arithmetic Operator take numerical values
+    // (either literals or varibles) as their operand
+    // returns a single numerical value.
+
+    console.log(3 + 3);
+    console.log(10 - 5);
+    console.log(20 / 5);
+    console.log(5 * 6);
+    console.log("Reminder Operator : " + 43 % 4);
+
+    // Increment and Decrement Operator
+    // Operator: x++ or ++x OR x-- or --x
+    // IF used postfix, with operator after operand (for example, x++),
+    // The increment operator increments and returns value before incrementing.
+
+    // If used prefix, with operator before operand (for example, ++x)
+    // The Increment Operator Increments and returns value after incrementing.
+
+    var ank = 14;
+    var navinAnk = ank++;
+    console.log(ank);
+    console.log(navinAnk);
+
+    // INCOMPLETE HAIN HEY(Increment and Decrement Operators) BAAD MAIN PURA KARNE KA HAIN ABHI KUCH SAMAJ NAHI AA RAHA
+    //Confusion : 2
+
+
+    // Comparison operators 
+    // A Comparison Operator compares its operands and
+    // returns a logical value based on whether the comparison is true
+
+    var m = 30;
+    var n = 10;
+
+    // Equal (==)
+    console.log(m == n);
+
+    // Not Equal (!=)
+    console.log(m != n);
+
+    //Greater Than Equal to (> =)
+    console.log(m >= n);
+
+    //Less Than Equal to (< =)
+    console.log(m <= n);
+
+    //More Than(>)
+    console.log(m > n);
+
+    //Less Than(<)
+    console.log(m < n);
+
+
+    // 4️⃣ Logical operators
+    // Logical operators are typically used with Boolean (logical) values; 
+    // when they are, they return a Boolean value.
+
+    var p = 30;
+    var o = -20;
+
+    // Logical AND (&&)
+    // The logical AND (&&) operator (logical conjunction) for a set of 
+    // operands is true if and only if all of its operands are true.
+
+    console.log(p > o && o > -50 && o < 0);
+
+
+    // Logical OR (||)
+    // The logical OR (||) operator (logical disjunction) for a set of 
+    // operands is true if and only if one or more of its operands is true.
+
+    console.log((p < o) || (o > 0) || (o > 0));
+
+
+    // Logical NOT (!)
+    // The logical NOT (!) operator (logical complement, negation) 
+    // takes truth to falsity and vice versa.
+
+    console.log(!((p > 0) || (o < 0)));
+    console.log(!true);
+
+
+    // String Concatenation(operators)
+    // The concatenation operator (+) concatenates two string values together, 
+    // returning another string that is the union of the two operand strings.
+
+    console.log("Openix Dev");
+    console.log("Openix " + "Dev");
+
+    var pre = "Welcome";
+
+    console.log(pre + " Suraj");
+    console.log(pre + " Soham Dada");
+    console.log(pre + " Rohan Ba");
+
+    // Challenge Time 2
+
+    // What will be the output of 3**3? 
+    console.log(10 ** 2); // Result: 100 //Note: 2 is power of 10
+
+    // What will be the output, when we add a number and a string?
+    console.log(7 + "Surya") // Result: 7Surya
+
+    // Write a program to swap two numbers?
+    var num1 = 10;
+    var num2 = 14; // OutPut Came as num1 = 14 and num2 = 10
+
+    // Write a program to swap two numbers without using third variable?
+    //Confusion : 2
+
+    // --------------- Day 2 Ends Here-------------------------------------------------------
+
+    //If...Else 
+    // The if statement executes a statement if a specified condition is truthy. 
+    // If the condition is falsy, another statement can be executed.
+
+    var updateTomrw = 'Rainy';
+
+    if (updateTomrw == 'Rainy') {
+        console.log("Oops! You Need A Raincoat to protect Yourself!")
+    } else {
+        console.log("Nothing, Keep Going !");
+    }
+
+
+
+    // Challenge Time 
+    // Write a program that works out whether if a given year is a leap year or not?
+    // A normal year has 365 days, leap years have 366, with an extra day in February.
+
+
+    var year = 2020;
+    // debugger;
+    if (year % 4 === 0) {
+        if (year % 100 === 0) {
+            if (year % 400 === 0) {
+                console.log("The year " + year + " is a leap year 1");
+            } else {
+                console.log("The year " + year + " is not a leap year 1");
+            }
+        } else {
+            console.log("The year " + year + " is a leap year 2");
+        }
+    } else {
+        console.log("The year " + year + " is not a leap year 2");
+    }
+
+
+    // What is truthy and falsy values in Javascript?
+    // we have total 5 falsy values in javascript
+    // 👉 0,"",undefined,null,NaN,false** is false anyway
+
+    var score = 12;
+
+    // if (score <= 10) {
+    //     console.log("Oh! NO, We loss the Game")
+    // } else {
+    //     console.log("We Got it! We won the game")
+    // }
+
+    //LET's SEE THE SHORTHAND FOR THIS =>
+
+    // 2️⃣Conditional (ternary) operator
+    // The conditional (ternary) operator is the only JavaScript operator 
+    // that takes three operands
+
+    console.log((score <= 10) ? "We Loss the Game" : "We won the game");
+
+
+    // 3️⃣ switch Statement
+    // Evaluates an expression, matching the expression's value to a 
+    // case clause, and executes statements associated with that case.
+
+    // 1st without break statment 
+    // Find the Area of circle, triangle and rectangle?
+
+    var area = "triangle";
+    var PI = 3.142,
+        l = 5,
+        b = 4,
+        r = 3;
+
+    // if (area == "circle") {
+    //     console.log("the area of the circle is : " + PI * r ** 2);
+    // } else if (area == "triangle") {
+    //     console.log("the area of the triangle is : " + (l * b) / 2);
+    // } else if (area == "rectangle") {
+    //     console.log("the area of the rectangle is : " + (l * b));
+    // } else {
+    //     console.log("please enter valid data");
+    // }
+
+    // Now it's time to write it in Switch Condition
+    // If you want only one output(pass only one line and stop) add=> break; after the line as shown in below --ALSO look at thr line 114-123
+
+    switch (area) {
+        case 'circle':
+            console.log("The area of the circle is : " + PI * r ** 2)
+            break;
+
+        case 'triangle':
+            console.log("the area of the triangle is : " + (l * b) / 2)
+            break;
+
+        case 'rectangle':
+            console.log("the area of the rectangle is : " + (l * b))
+            break;
+
+        default:
+            console.log("Please enter the valid data")
+    }
+
+    // 🤗break
+    // Terminates the current loop, switch, or label 
+    // statement and transfers 
+    // program control to the statement following the terminated statement.
+
+
+    // 🤗continue
+    // Terminates execution of the statements in the current iteration of the 
+    // current or labeled loop, and continues execution of the loop with the 
+    // next iteration.
+
+    var numWk = 0;
+    while (numWk <= 50) {
+        console.log(numWk);
+        numWk++;
+    }
+
+    // Not Working/ wrong
+
+    var numNt = 100;
+    while (numNt <= 50) {
+        console.log(numNt);
+        numNt++;
+    }
+    console.log("As you can see, This is not working");
+
+
+
+    // DO - WHILE LOOP Statement
+    //In Do-while loop.... 
+    //Whatever happens you will get Output definetly
+
+    numDWL = 10;
+    do {
+        // debugger
+        console.log(numDWL);
+        numDWL++;
+    } while (numDWL <= 30);
+
+    // Try this too
+    numDWLs = 80;
+    do {
+        // debugger
+        console.log(numDWLs);
+        numDWLs++;
+    } while (numDWLs <= 10);
+
+    // --------------- Day 3 Ends Here-------------------------------------------------------
+
+    //Continued from Day 3
+    //For Loop
+
+    // for(initializer; condition; iteration){               //intializer= var num=10;  //condition= num<=20;  //iteration= num++;
+    //Code to be executed
+    //}
+
+    for (var shNum = 0; shNum <= 10; shNum++) {
+        // debugger
+        console.log(shNum);
+    }
+
+    // 😀6: challenge Time 🏁
+    // JavaScript program to print table for given number (8)?
+
+    for (var tnum = 1; tnum <= 10; tnum++) {
+        var tableOf = 46;
+        console.log(tableOf + " * " + tnum + " = " + tableOf * tnum)
+    }
+
+    // --------------- Day 4 Ends Here-------------------------------------------------------
+
+    //  1️⃣Function Definition 
+
+    // Before we use a function, we need to define it. 
+
+    // A function definition (also called a function declaration, or function statement) 
+    // consists of the function keyword, followed by:
+
+    // The name of the function.
+    // A list of parameters to the function, enclosed in parentheses and separated by commas.
+    // The JavaScript statements that define the function, enclosed in curly brackets, {...}.
+
+
+    // var a = 10;
+    // var b = 20;
+    // var sum = a+b;
+    // console.log(sum);
+    //this will be so complicated and we cannot get more advantages
+
+    function funSum() {
+        var a = 12,
+            b = 18;
+        var total = a + b;
+        console.log("The Answer is " + total);
+    }
+    // We Need to call function // "Abey! Function ko koi to call karo be"
+    funSum();
+    // 2️⃣Calling functions
+    // Defining a function does not execute it.
+    // A JavaScript function is executed when "something" invokes it (calls it).
+
+
+
+
+    // 3️⃣ Function Parameter vs Function Arguments 
+    // Function parameters are the names listed in the function's definition. 
+    // Function arguments are the real values passed to the function.
+
+
+    // function sum(a,b){
+    //   var total = a+b;
+    //   console.log(total);
+    // }
+
+    // sum();
+    // sum(20,30);
+    // sum(50,50);
+    // sum(5,6)
+
+
+    // 🙋‍👨‍🏫 Interview Question 🙋‍👨‍🏫 
+
+    // Why Functions? 
+
+    // You can reuse code: Define the code once, and use it many times.
+    // You can use the same code many times with different arguments, 
+    // to produce different results.
+
+    // OR
+
+    // A function is a group of reusable code which can be called anywhere 
+    // in your program. This eliminates the need of writing the same code 
+    // again and again.
+
+    // DRY => do not repeat yourself
+
+
+
+
+
+
+    // 4️⃣ Function expressions
+    // "Function expressions simply means 
+    // create a function and put it into the variable "
+
+    function sum(a, b) {
+        var total = a + b;
+        console.log(total);
+    }
+
+    var funExp = sum(5, 15);
+    // By using this method, we can call function without adding parathensis() // it's simple boys
+
+
+    // 5️⃣ Return Keyword
+    // When JavaScript reaches a return statement, 
+    // the function will stop executing.
+
+    // Functions often compute a return value.
+    // The return value is "returned" back to the "caller"
+
+
+    // function sum(a,b){
+    //   return total = a+b;
+    // }
+
+    // var funExp = sum(5,25);
+
+    // console.log('the sum of two no is ' + funExp );
+
+
+    // 6️⃣ Anonymous Function
+
+    // A function expression is similar to and has the same syntax 
+    // as a function declaration One can define "named" 
+    // function expressions (where the name of the expression might 
+    // be used in the call stack for example) 
+    // or "anonymous" function expressions.
+
+
+    // var funExp = function(a,b){
+    //   return total = a+b;
+    // }
+
+    // var sum = funExp(15,15);
+    // var sum1 = funExp(20,15);
+
+    // console.log(sum > sum1 );
+    //Confusion
+
+    // --------------- Day 5 Ends Here-------------------------------------------------------
+
+    //Javascript Was Created in 1996
+
+
+    // 👻 Now It's Time for Modern JavaScript 😍😍 
+    // 🙏🙏 Features of ECMAScript 2015 also known as ES6 🙏🙏
+
+    // 1️⃣ LET VS CONST vs  VAR
+
+    var myName = "Openix Developer";
+    console.log(myName);
+
+    myName = "Dev Openix";
+    console.log(myName);
+
+    let my_Name = "Openix Dev";
+    console.log(my_Name);
+
+    my_Name = "Web Developer";
+    console.log(my_Name);
+
+
+    const myName2 = "Web Dev";
+    console.log(myName2);
+
+    // myName2 = "Coder";
+    // console.log(myName2);
+    //Try uncommenting this(above) 2 lines
+
+    // It shows the Error Because const is constant value which cannot be changed
+    // Mostly Let and Var are same
+
+
+    function biodata() {
+        const myFirstName = "You";
+        console.log(myFirstName);
+
+        if (true) {
+            const myLastName = "Know";
+        }
+
+        // console.log('innerOuter ' + myLastName);
+    }
+
+    // console.log(myFirstName);
+    biodata();
+
+    // var => Function scope
+    // let and
+    // const => Block Scope
+
+
+
+
+    // 2️⃣ Template literals (Template strings) 
+    // JavaScript program to print table for given number (8)?
+
+    // output :  8 * 1 = 8 
+    //   8 * 2 = 16(8*2)
+    //  => 8 * 10 = 80
+
+    for (let num = 1; num <= 10; num++) {
+        let tableOf = 9;
+        // console.log(tableOf + " * " + num + " = " + tableOf * num);
+        console.log(` ${tableOf} * ${num} = ${tableOf * num} `);
+    }
+
+
+    // 3️⃣  Default Parameters
+    // Default function parameters allow named parameters to be 
+    // initialized with default values if no value or undefined is passed.
+
+    // function mult(a,b=5){
+    //   return a*b;
+    // }
+
+    // console.log(mult(3));
+
+
+    // 6️⃣ Fat Arror Function 
+
+    // 👻 Normal Way of writing Function
+
+    console.log(sum());
+
+    function sum() {
+        let a = 5;
+        b = 6;
+        let sum = a + b;
+        return `the sum of the two number is ${sum}`;
+    }
+
+    // 👻 How to convert in into Fat Arrow Function 
+    // const sum = () => `the sum of the two number is ${(a=5)+(b=6)}`;
+    // console.log(sum());
+
+    // --------------- Day 6 Ends Here-------------------------------------------------------
+
+    /**** Section 7👉 Arrays in JavaScript  ****/
+
+    // When we use var, we can stored only one value at a time. 
+    // var friend1 = 'Soham';
+    // var friend2 = 'Rohan';
+    // var friend3 = 'Saif';
+
+    // var myFriends = ['Soham', 16, male, 'Rohan', 16, male, 'Saif', true, 52];
+
+    // When we feel like storing multiple values in one variable then 
+    // instead of var, we will use an Array.
+
+    // In JavaScript, we have an Array class, and 
+    // arrays are the prototype of this class. 
+
+    // example 🏁
+
+    var myFriends = ['Soham', 'Rohan', 'Saif']
+
+    // 1️⃣ Array Subsection 1 👉 Traversal in array✌ 
+    // navigate through an array
+
+    // if we want to get the single data at a time  and also 
+    // if we want to change the data
+    // console.log(myFriends[2]);
+    // console.log(myFriends.length); //length is property to find the number of an array(index)
+    // console.log(myFriends.length - 1);
+
+
+    // we use for loop to navigate 
+
+    // var myFriends = ['vinod','ramesh','arjun','vishal'];
+    // for(var i=0; i<myFriends.length; i++){
+    //   console.log(myFriends[i]);
+    // }
+
+    // After ES6 we have for..in and for..of loop too 
+
+    // var myFriends = ['vinod','ramesh','arjun','vishal'];
+
+    // for(let elements in myFriends){
+    //   console.log(elements);
+    // }
+
+    // for(let elements of myFriends){
+    //   console.log(elements);
+    // }
+
+    // Array.prototype.forEach() 🙋‍♂️
+    // Calls a function for each element in the array.
+
+
+    // myFriends.forEach(function(element, index, array) {
+    //     console.log(element + " index : " +
+    //         index + " " + array);
+    // });;
+
+    myFriends.forEach((element, index, array) => {
+        console.log(element + " index : " +
+            index + " " + array);
+    }); //In this method(arrow), you can directly (element, index, array) this and then you have to add => 
+
+
+
+    // 2️⃣ Array Subsection 2 👉 Searching and Filter in an Array 
+
+    // Array.prototype.indexOf() 🙋‍♂️
+
+    // Returns the first (least) index of an element within the array equal 
+    // to an element, or -1 if none is found. It search the element from the 
+    // 0th index number
+
+    // --------------- Day 7 Ends Here-------------------------------------------------------
+
+    // 2️⃣ Array Subsection 2 👉 Searching and Filter in an Array 
+
+    // Array.prototype.indexOf() 🙋‍♂️
+
+    // Returns the first (least) index of an element within the array equal 
+    // to an element, or -1 if none is found. It search the element from the 
+    // 0th index number
+
+    var myList = ["Suraj", "Soham", "Rohan", "Surya"];
+    console.log(myList.indexOf("Rohan", 1));
+
+
+    // Array.prototype.lastIndexOf() 🙋‍♂️
+    // Returns the last (greatest) index of an element within the array equal 
+    // to an element, or -1 if none is found. It search the element last to first
+
+    console.log(myList.lastIndexOf("Soham"));
+
+    // Array.prototype.includes() 🙋‍♂️
+    // Determines whether the array contains a value, 
+    // returning true or false as appropriate.
+
+    console.log(myList.includes("Surya"));
+    console.log(myList.includes("Nepali"));
+
+    // Array.prototype.find() 🙋‍♂️
+
+    // arr.find(callback(element[, index[, array]])[, thisArg])
+
+    // Returns the found element in the array, if some element in the 
+    // array satisfies the testing function, or undefined if not found.
+    // Only problem is that it return only one element
+
+    const prices = [200, 300, 350, 400, 450, 500, 600];
+
+    // price < 400
+    const findKaro = prices.find((currVal) => currVal < 400);
+    console.log(findKaro);
+
+    console.log(prices.find((currVal) => currVal > 1400));
+
+    // Array.prototype.findIndex() 🙋‍♂️
+
+    // Returns the found index in the array, if an element in the 
+    // array satisfies the testing function, or -1 if not found.
+
+
+    console.log(prices.findIndex((currVal) => currVal > 1400));
+
+
+    // Array.prototype.filter() 🙋‍♂️
+
+    // Returns a new array containing all elements of the calling 
+    // array for which the provided filtering function returns true.
+
+    // price < 400
+    const newPriceTag = prices.filter((elem, index) => {
+        // return elem > 1400;
+        return elem < 500;
+    })
+    console.log(newPriceTag);
+
+
+
+
+    // 3️⃣ Array Subsection 3 👉 How to sort an Array
+
+    // Array.prototype.sort() 🙋‍♂️
+
+    // The sort() method sorts the elements of an array in place and 
+    //returns the sorted array. The default sort order is ascending, built 
+    //upon converting the elements into strings, 
+    // then comparing their sequences of UTF-16 code units values.
+
+    // const months = ['March', 'Jan', 'Feb', 'April' , 'Dec', 'Nov'];
+
+    // console.log(months.sort());
+
+    // const array1 = [1, 30, 4, 21, 100000, 99];
+    // console.log(array1.sort());
+
+
+    // However, if numbers are sorted as strings, 
+    // "25" is bigger than "100", because "2" is bigger than "1".
+
+    // Because of this, the sort() method will produce an incorrect 
+    // result when sorting numbers.
+
+
+
+    // 4️⃣ Array Subsection 4 👉 Perform CRUD
+
+    // Array.prototype.push() 🙋‍♂️
+    // The push() method adds one or more elements to the 
+    // end of an array and returns the new length of the array.
+
+    const friends = ['Rohan', 'Soham'];
+    var newFriendList = "Kshitij";
+    // var newFriendList = ['Shravan', 'Shitij']; // this worked but it gives result diffrently | it shows array 2 after the friends 
+
+    friends.push('Shravan');
+    // try something diffrent
+    friends.push(newFriendList);
+    console.log(friends);
+
+    // lets count it 
+    const count = friends.push('Soham');
+    console.log(count);
+
+
+    // Array.prototype.unshift() 🙋‍♂️
+    // The unshift() method adds one or more elements to the 
+    // beginning of an array and returns the new length of the array.
+
+    const avengersOrignal = ['Captain America', 'Hulk', 'Black Widow', 'Hawkye', 'Thor'];
+    avengersOrignal.push('Vision');
+    avengersOrignal.unshift('Iron Man');
+
+    console.log(avengersOrignal);
+
+
+    // Array.prototype.pop() 🙋‍♂️
+    // The pop() method removes the last element from an array and returns 
+    // that element. This method changes the length of the array.
+
+    avengersOrignal.pop();
+    console.log(avengersOrignal);
+
+    // Array.prototype.shift() 🙋‍♂️
+    // The shift() method removes the first element from an array and returns 
+    // that removed element. This method changes the length of the array.
+
+    console.log(avengersOrignal.shift());
+
+
+
+    // 😀8: challenge Time 🏁
+
+    // Array.prototype.splice() 🙋‍♂️
+    // Adds and/or removes elements from an array. //and also return the value after deleting the value | able to replace word
+
+    // 1: Add Dec at the end of an array?
+    // 2: What is the return value of splice method?
+    // 3: update march to March (update)?
+    // 4: Delete June from an array?
+
+    const month = ['Jan', 'march', 'April', 'June', 'July']
+
+    //1:
+    const newMonth = month.splice(5, 0, "Dec");
+    //If there are maximum strings to save the time //Try the following:
+    // const newMonth = month.splice(month.length, 0, "Dec");
+
+    console.log(month);
+
+    //2:
+    console.log(newMonth);
+
+    //3:
+    const indexOfMonth = month.indexOf('march');
+
+    if (indexOfMonth != -1) {
+        const updateMonth = month.splice(indexOfMonth, 1, 'March');
+        console.log(month)
+    } else {
+        console.log('You did Mistake')
+    }
+
+    //4:
+    const indexOfMonthj = month.indexOf('June');
+
+    if (indexOfMonthj != -1) {
+        const updateMonth = month.splice(indexOfMonthj, 1);
+        console.log(month);
+        console.log(updateMonth);
+    } else {
+        console.log('You did a Mistake');
+    }
+
+
+
+    // 5️⃣ Array Subsection 4 👉 Map and Reduce Method 
+
+    // Array.prototype.map() 🙋‍♂️
+
+    // let newArray = arr.map(callback(currentValue[, index[, array]]) {
+    //     // return element for newArray, after executing something
+    // }[, thisArg]);
+
+    // ***Returns a new array containing the results of calling a 
+    // function on every element in this array.***
+
+    const arrayA = [1, 4, 9, 21, 35];
+
+    // num > 9
+    const newArr = arrayA.map((currElem, index, arr) => {
+        return currElem > 9;
+    });
+
+    console.log(arrayA);
+    console.log(newArr);
+
+    //New Type 
+
+    let newArra = arrayA.map((currElem, index, arr) => {
+        return `Index no = ${index} and the valur is ${currElem} belogs to ${arr} `
+    });
+
+    console.log(newArra);
+
+
+
+    // 😀9: challenge Time 🏁
+
+    //  1: Find the square root of each element in an array?
+    //  2: Multiply each element by 2 and return only those 
+    //     elements which are greater than 10?
+
+    // 1: 
+    let arrSR = [25, 36, 49, 64, 81];
+
+    let arrSRFind = arrSR.map((currElem) => Math.sqrt(currElem));
+    console.log(arrSRFind);
+
+    // 2:
+
+    let arrWGT10 = [2, 3, 5, 6, 7, 8];
+
+    let arrWGTS = arrWGT10.map((currVal) => {
+        return currVal * 2;
+    }).filter((currElem) => {
+        return currElem > 10;
+    });
+    console.log(arrWGTS);
+
+    // One Line Code
+    // let arrWGTSol2 = arrWGT10.map((currVal) => currVal * 2).filter((currElem) => currElem > 10)
+    // console.log(arrWGTSol2);
+
+
+    // 👉 Reduce Method 
+
+    // flatten an array means to convert the 3d or 2d array into a 
+    // single dimensional array 
+
+    // The reduce() method executes a reducer function (that you provide) 
+    // on each element of the array, resulting in single output value.
+
+    // The reducer function takes four arguments:
+
+    // Accumulator  // Collect(Store at one place)
+    // Current Value
+    // Current Index
+    // Source Array
+
+
+    // 4 subj = 1sub= 7
+    // 3dubj = [5,6,2]
+
+    // let arr = [5,6,2];
+
+    // let sum = arr.reduce((accumulator, curElem) => {
+    //         debugger;
+    //       return accumulator += curElem;
+    // },7)
+    // console.log(sum);
+    // Confusion
+
+    // How to fatten an array 
+    // converting 2d and 3d array into one dimensional array
+
+    const arrB = [
+        ['Zone_1', 'Zone_2'],
+        ['Zone_3', 'Zone_4'],
+        ['Zone_5', 'Zone_6'],
+        ['Zone_7', 'Zone_8'],
+    ]
+
+    let flatArray = arrB.reduce((accum, currValue) => {
+        return accum.concat(currValue);
+    });
+    console.log(flatArray);
+
+    // --------------- Day 8 Ends Here-------------------------------------------------------
+
+    /**** Section 7👉 Strings in JavaScript  ****/
+
+    // A JavaScript string is zero or more characters written inside quotes.
+
+    // JavaScript strings are used for storing and manipulating text.
+    // You can use single or double quotes
+
+    // Strings can be created as primitives, 
+    // from string literals, or as objects, using the String() constructor
+
+    // let myName = "vinod thapa";
+    // let myChannelName = 'vinod thapa';
+    let naam = "You Know";
+    let myNick = "Surya";
+
+
+    // let blogName = new String("Classic-Tech");
+    let blogName = "Classic-Tech";
+
+    console.log(naam);
+    console.log(blogName);
+
+
+    // 👉 How to find the length of a string
+    // String.prototype.length 🙋‍♂️
+    // Reflects the length of the string. 
+
+    console.log(blogName.length);
+
+
+    // Escape Character
+    //We have to use \ Backslash to use signs(quotes) like "" and ''
+
+    let dialouge = "Love You \"3000\" Times ";
+    // The dialouge is taken from Avengers: EndGame
+    console.log(dialouge);
+
+
+
+
+    // 👉 Finding a String in a String
+
+    // String.prototype.indexOf(searchValue [, fromIndex]) 🙋‍♂️
+
+    // The indexOf() method returns the index of (the position of) the first
+    // occurrence of a specified text in a string
+    // JavaScript counts positions from zero.
+    // 0 is the first position in a string, 1 is the second, 2 is the third ...
+
+    const info = "I am Web Dev";
+    console.log(info.indexOf("Web"));
+    console.log(info.indexOf("b"));
+
+    // // String.prototype.lastIndexOf(searchValue [, fromIndex]) 🙋‍♂️
+    // // Returns the index within the calling String object of the 
+    // // last occurrence of searchValue, or -1 if not found.
+    console.log(info.lastIndexOf("Web"));
+    console.log(info.lastIndexOf("b", 1));
+
+
+    // 👉 Searching for a String in a String
+
+    // String.prototype.search(regexp) 🙋‍♂️
+
+    // The search() method searches a string for a specified 
+    // value and returns the position of the match
+    let searchResult = info.search("Dev");
+    console.log(searchResult);
+
+
+    // 👉 Extracting String Parts
+
+    // There are 3 methods for extracting a part of a string:
+    // slice(start, end)
+    // substring(start, end)
+    // substr(start, length)
+
+    // The slice() Method 🙋‍♂️ || Naam main hi answer hain
+    // slice() extracts a part of a string and returns the extracted part 
+    // in a new string.
+
+    // The method takes 2 parameters: the start position, 
+    // and the end position (end not included).
+
+    let moviesFav = "Bahubali, Avengers:Endgame, Spider Man: Far From Home";
+    // let checkSlice = moviesFav.slice(0, 8);
+    // let checkSlice = moviesFav.slice(19);
+    let checkSlice = moviesFav.slice(0, -15);
+    console.log(checkSlice);
+
+    // The slice() method selects the elements starting at the 
+    // given start argument, and ends at, but does not include, the given end argument.
+    // Note: The original array will not be changed.
+
+    // 😀11: challenge Time 🏁
+    // Display only 280 characters of a string like the 
+    // one used in Twitter?
+
+    let manKiBaat =
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae facere dicta facilis perferendis reiciendis odio sint reprehenderit? Maxime, excepturi! Laudantium impedit suscipit temporibus cupiditate quam, illo dolore sed amet soluta aliquid voluptat Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae facere dicta facilis perferendis reiciendis odio sint reprehenderit? Maxime, excepturi! Laudantium impedit suscipit temporibus cupiditate quam, illo dolore sed amet soluta aliquid voluptat";
+
+    let actualKiBaat = manKiBaat.slice(0, 280);
+    console.log(actualKiBaat);
+    console.log(actualKiBaat.length);
+
+
+    // The substring() Method 🙋‍♂️
+    // substring() is similar to slice().
+
+    // The difference is that substring() cannot accept negative indexes.
+    // If we give negative value then the characters are counted from the 0th pos 
+
+    let checksubstring = moviesFav.substring(8, -1);
+    console.log(checksubstring);
+    // As you can see negative values are not working
+
+
+    // The substr() Method 🙋‍♂️
+    // substr() is similar to slice().
+
+    // The difference is that the second parameter specifies the 
+    // length of the extracted part.
+    let checksubstr = moviesFav.substr(5, -2);
+    console.log(checksubstr);
+    // The real use of substr is:
+    let useOfsubstr = moviesFav.substr(-25);
+    console.log(useOfsubstr);
+
+    // 👉 Replacing String Content() 
+
+    // String.prototype.replace(searchFor, replaceWith) 🙋‍♂️
+    // The replace() method replaces a specified value 
+    // with another value in a string.
+
+    // Points to remember 
+    // 1: The replace() method does not change the string 
+    // it is called on.  It returns a new string.
+    // 2: By default, the replace() method replaces only 
+    // the first match
+    // 3:By default, the replace() method is case sensitive. 
+    // Writing SURYA (with upper-case) will not work
+
+    let captainAmericaIs = "The Current Captain America is Steve Rogers -2019";
+
+    let nowCaptainAmericIs = captainAmericaIs.replace("Steve Rogers -2019", "Sam Wilson -2023");
+    console.log(captainAmericaIs);
+    console.log(nowCaptainAmericIs);
+
+    //👉 Extracting String Characters
+
+    // There are 3 methods for extracting string characters:
+    // charAt(position)
+    // charCodeAt(position)
+    // Property access [ ]
+
+    // The charAt() Method 🙋‍♂️
+    // The charAt() method returns the character at a 
+    // specified index (position) in a string
+
+    let stData = "I Love JavaScript";
+    console.log(stData.charAt(7));
+
+    // The charCodeAt() Method 🙋‍♂️
+    // The charCodeAt() method returns the unicode of the 
+    // character at a specified index in a string:
+
+    // The method returns a UTF-16 code
+    //  (an integer between 0 and 65535).
+
+    // The Unicode Standard provides a unique number for every 
+    // character, no matter the platform, device, application, 
+    // or language. UTF-8 is a popular Unicode encoding which
+    //  has 88-bit code units.
+
+    console.log(stData.charCodeAt(8));
+
+    // 😀12: challenge Time 🏁
+
+    // Return the Unicode of the last character in a string
+    let lastWalaChar = stData.length - 1;
+    console.log(stData.charCodeAt(lastWalaChar));
+
+    // Property Access
+    // ECMAScript 5 (2009) allows property access [ ] on strings
+    console.log(stData[0]);
+
+
+    //👉  Other useful methods
+
+    let mynName = "tech Surya";
+    console.log(mynName.toUpperCase());
+    console.log(mynName.toLowerCase());
+
+    // The concat() Method 🙋‍♂️
+    // concat() joins two or more strings
+
+    let fName = "You"
+    let lName = "Know"
+
+    console.log(fName + lName);
+    console.log(`${fName} ${lName}`);
+    console.log(fName.concat(lName));
+    console.log(fName.concat(" ", lName));
+
+    // String.trim() 🙋‍♂️
+    // The trim() method removes whitespace from both 
+    // sides of a string | Useful in Comment section
+
+    var faltuComment = "        Binod!      Binod!!     ";
+    console.log(faltuComment);
+    console.log(faltuComment.trim());
+
+
+    // Converting a String to an Array
+    // A string can be converted to an array with the 
+    // split() method
+
+    var txt = "a, b,c d,e"; // String
+    console.log(txt.split(",")); // Split on commas
+    console.log(txt.split(" ")); // Split on spaces
+    console.log(txt.split("|")); // Split on pipe
+
+    // --------------- Day 9 Ends Here-------------------------------------------------------
+
+    /**** Section 8👉 Date and Time in JavaScript ****/
+
+    // JavaScript Date objects represent a single moment in time in a 
+    // platform-independent format. Date objects contain a Number 
+    // that represents milliseconds since 1 January 1970 UTC.
+
+    // 👉 Creating Date Objects
+    // There are 4 ways to create a new date object:
+
+    // new Date()
+    // new Date(year, month, day, hours, minutes, seconds, milliseconds)
+    // it takes 7 arguments
+    // new Date(milliseconds)
+    // we cannot avoid month section 
+    // new Date(date string)
+
+
+    // new Date() 🙋‍♂️
+    // Date objects are created with the new Date() constructor.
+
+    let presentDate = new Date();
+    console.log(presentDate);
+    // here you are viewing Present Date & Time not My current Time&Date(Past);
+
+    console.log(new Date());
+    console.log(new Date().toLocaleString()); // 9/11/2019, 1:25:01 PM
+    console.log(new Date().toString()); // Wed Sep 11 2019 13:25:01 GMT+0700 (GMT+07:00)
+
+    // Date.now() 🙋‍♂️
+    console.log("New Section");
+    // Returns the numeric value corresponding to the current time—the number 
+    // of milliseconds elapsed since January 1, 1970 00:00:00 UTC
+
+
+    console.log(Date.now());
+
+
+    // new Date(year, month, ...) 🙋‍♂️
+    // 7 numbers specify year, month, day, hour, minute, second, 
+    // and millisecond (in that order)
+    // Note: JavaScript counts months from 0 to 11.
+
+    // January is 0. December is 11.
+
+    var d = new Date(2021, 3, 1);
+    console.log(d.toLocaleString());
+    // Confusion month and date
+
+
+    // new Date(dateString) 🙋‍♂️
+    // new Date(dateString) creates a new date object from a date string
+
+    var dateTry = new Date("February 3, 2021 12:12:00");
+    console.log(dateTry.toLocaleString());
+
+    // new Date(milliseconds) 🙋‍♂️
+    // new Date(milliseconds) creates a new date object as zero time plus milliseconds:
+
+
+    // var dateTry2 = new Date(0);
+    var dateTry2 = new Date(1609574531435);
+    // var dateTry2 = new Date(86400000 * 2);
+    console.log(dateTry2.toLocaleString());
+
+
+    //👉 Dates Method
+    // console.log("New Section");
+    // // how to get the indivisual date 
+    // console.log(presentDate.toLocaleString());
+    // console.log(presentDate.getFullYear()); //example 2021
+    // console.log(presentDate.getMonth()); // 0-11 jan to dec
+    // console.log(presentDate.getDate());
+    console.log(presentDate.getDay());
+
+    // // how to set the indivisual date 
+    console.log("New Section")
+    var dateTry3 = new Date();
+
+    console.log(dateTry3.setFullYear(2021));
+    // // The setFullYear() method can optionally set month and day
+    console.log(dateTry3.setFullYear(2021, 29, 6));
+    let setmonth = dateTry3.setMonth(6); // 0-11 jan to dec
+    console.log(setmonth);
+    console.log(dateTry3.setDate(29));
+    console.log(dateTry3.toLocaleString());
+
+    //👉 Time Methods
+    console.log("New Section")
+    var dateTry4 = new Date();
+    // how to get the indivisual Time 
+
+    console.log(dateTry4.getTime());
+    // The getTime() method returns the number of milliseconds 
+    // since January 1, 1970
+    console.log(dateTry4.getHours());
+    // The getHours() method returns the hours of a date as a 
+    // number (0-23)
+    console.log(dateTry4.getMinutes());
+    console.log(dateTry4.getSeconds());
+    console.log(dateTry4.getMilliseconds());
+
+
+    // // how to set the indivisual Time 
+    console.log("New Section");
+    var dateTry5 = new Date();
+
+    // console.log(dateTry5.setTime());
+    console.log(dateTry5.setHours(5));
+    console.log(dateTry5.setMinutes(5));
+    console.log(dateTry5.setSeconds(5));
+    console.log(dateTry5.setMilliseconds(5));
+
+    // <body> refer karo
+
+    function functionDate() {
+        var dateTry6 = new Date();
+        dateTry6.setHours(6);
+        document.getElementById("demo").innerHTML = dateTry6;
+    }
+    // I got OutPut as:
+    // Wed Feb 10 2021 06:45:43 GMT+0530 (India Standard Time)
+    // Whats Abot you?
+
+    console.log("It's Practice Time");
+    new Date().toLocaleTimeString();
+    // :) =>
+    new Date().toDateString();
+    // :) =>
+    new Date().toLocaleString();
+
+
+    // <body> refer karo
+    var dateTry7 = new Date().toLocaleTimeString();
+    document.getElementById("time").innerHTML = dateTry7;
+
+    var dateTry8 = new Date().toLocaleDateString();
+    document.getElementById("dateTryO").innerHTML = dateTry8;
+
+    // --------------- Day 10 Ends Here-------------------------------------------------------
+
+    /**** Section 9👉 Math Object in JavaScript ****/
+
+    // The JavaScript Math object allows you to perform mathematical tasks on numbers.
+
+    // console.log(Math.PI);🙋‍♂️
+    console.log(Math.PI);
+
+    // Math.round() 🙋‍♂️
+    // returns the value of x rounded to its nearest integer
+
+    console.log("Round");
+    var chaloTryKare = 60.5956;
+    console.log(Math.round(chaloTryKare));
+
+
+    // Math.pow() 🙋‍♂️
+    // Math.pow(x, y) returns the value of x to the power of y
+
+    console.log("Pow");
+    console.log(Math.pow(10, 2));
+
+    // Math.sqrt() 🙋‍♂️
+    // Math.sqrt(x) returns the square root of x
+
+    console.log("Square Root");
+    console.log(Math.sqrt(25));
+    console.log(Math.sqrt(55));
+
+
+    // Math.abs() 🙋‍♂️
+    // Math.abs(x) returns the absolute (positive) value of x // in short: returns only positive value
+    console.log("absolute")
+    console.log(Math.abs(-55));
+    console.log(Math.abs(-55.5));
+    console.log(Math.abs(-955));
+    console.log(Math.abs(4 - 6));
+
+    // Math.ceil() 🙋‍♂️
+    // Math.ceil(x) returns the value of x rounded up to its nearest integer
+
+    console.log("ceil")
+    console.log(Math.ceil(4.51));
+    console.log(Math.round(4.51));
+    console.log(Math.ceil(99.01));
+    console.log(Math.round(99.1));
+
+    // Math.floor()  🙋‍♂️
+    // Math.floor(x) returns the value of x rounded down to its nearest integer
+
+    console.log("floor");
+    console.log(Math.floor(4.7));
+    console.log(Math.floor(99.1));
+
+    // Math.min() 🙋‍♂️
+    // Math.min() can be used to find the lowest value in a list of arguments
+
+    console.log("min");
+    console.log(Math.min(0, 150, 30, 20, -8, -200));
+
+
+    // Math.max() 🙋‍♂️
+    // Math.max() can be used to find the highest value in a list of arguments
+
+    console.log("max");
+    console.log(Math.max(0, 150, 30, 20, -8, -200));
+
+
+    // Math.random() 🙋‍♂️
+    // Math.random() returns a random number between 0 (inclusive), and 1 (exclusive)
+
+    console.log("random")
+    console.log(Math.floor(Math.random() * 10));
+    console.log(Math.floor(Math.random() * 10)); // 0 to 9
+
+
+    // Math.round() 🙋‍♂️
+    // The Math.round() function returns the value of a number 
+    // rounded to the nearest integer.
+
+    console.log("round");
+    console.log(Math.round(4.6));
+    console.log(Math.round(99.1));
+
+
+    // Math.trunc()  🙋‍♂️
+    // The trunc() method returns the integer part of a number
+
+    console.log("trunc");
+    console.log(Math.trunc(4.6));
+    console.log(Math.trunc(-99.1));
+
+    // Practice Time 
+
+    // if the argument is a positive number, Math.trunc() is equivalent to 
+    // Math.floor(),
+    // otherwise Math.trunc() is equivalent to Math.ceil().
+
+    // --------------- Day 11 Ends Here-------------------------------------------------------
+
+    // Section 10👉 Document Object model in JavaScript 
+
+    // try this in console section (Chrome)
+    // window
+    // window.location
+    // window.location.href
+
+    // document.body.style.background = "yellow";
+
+
+    // 1️⃣ Window is the main container or we can say the 
+    // global Object and any operations related to entire 
+    // browser window can be a part of window object. 
+
+    // For ex 👉 the history or to find the url etc.
+
+    // 1️⃣ whereas the DOM is the child of Window Object
+
+
+    // 2️⃣ All the members like objects, methods or properties. 
+    // If they are the part of window object then we do not refer 
+    // the window object. Since window is the global object 
+    // so you do not have to write down window. 
+    // - it will be figured out by the runtime.
+
+    // For example
+    // 👉 window.screen or just screen is a small information 
+    // object about physical screen dimensions.
+    // 👉 window.location giving the current URL
+    // 👉 window.document or just document is the main object 
+    // of the potentially visible (or better yet: rendered) 
+    // document object model/DOM.
+
+
+    // 2️⃣ Where in the DOM we need to refer the document, 
+    // if we want to use the document object, methods or properties
+    // For example
+    // 👉 document.getElementById()
+
+
+    // 3️⃣ Window has methods, properties and object. 
+    // ex setTimeout() or setInterval() are the methods 
+    // where as Document is the object of the Window and 
+    // It also has a screen object with properties 
+    // describing the physical display.
+
+
+    // Now, I know you have a doubt like we have seen the methods 
+    // and object of the global object that is window. But What about
+    // the properties of the Window Object 🤔
+
+    // so example of window object properties are
+    // innerHeight, 
+    // innerWidth and there are many more 
+
+    // let's see some practical in DOM HTML file
+
+
+    // ************** DOM vs BOM *******************
+
+    // 👉 The DOM is the Document Object Model, which deals with the document, 
+    // the HTML elements themselves, e.g. document and all traversal you 
+    // would do in it, events, etc.
+
+    // For Ex: 👨‍🏫
+    // change the background color to red
+    // document.body.style.background = "red";
+
+
+    // 👉 The BOM is the Browser Object Model, which deals with browser components 
+    // aside from the document, like history, location, navigator and screen 
+    // (as well as some others that vary by browser). OR 
+    // In simple meaning all the Window operations which comes under BOM are performed 
+    // usign BOM 
+
+    // REFER to <body> // Requires Internet Connection to visit a website before trying this 
+    function picheChalo() {
+        window.history.back();
+    }
+
+    // Let's see more practical on History object 
+
+    // Functions alert/confirm/prompt are also a part of BOM: 
+    // they are directly not related to the document, 
+    // but represent pure browser methods of communicating with the user.
+
+    // alert(location.href); // shows current URL
+    // if (confirm("Want To Visit My GitHub Account")) {
+    //     location.href = "https://www.github.com/Tech-Surya/"; // redirect the browser to another URL
+    // }
+
+    // try this //
+    // $0 and // $0.style.background = "yellow";
+
+    // Section 3️⃣: Navigate through the DOM 
+
+    // 1: document.documentElement
+    // returns the Element that is the root element of the document. 
+    // 2: document.head
+    // 3: document.body
+    // 4: document.body.childNodes (include tab,enter and whiteSpace)
+    // list of the direct children only 
+    // 5: document.children (without text nodes, only regular Elements)
+    // 6: document.childNodes.length
+
+    //SECTION 4️⃣:  How to search the Elements and the References 
+    // refer to <body>
+
+    const changeContent = () => {
+        document.getElementById('paraGraph').innerHTML = "Chalo to Shruu karte hain!";
+    }
+
+    // by taking the reference, paraGraph is object here
+
+    // Now the same we have is the query selector
+    // querySelector returns the first matching value whereas
+    // querySelectorAll() will return all the Elements
+
+    // document.querySelector('#paraGraph').innerHTML = "This is trial";
+    // document.querySelector('.para').innerHTML = "Main Thoda Badal badal Gaya Sa Hu";
+
+    // refer to <body>
+    console.log(document.getElementById('web-id').innerHTML);
+    console.log(document.querySelector('#web-id').innerHTML);
+    console.log(document.querySelector('.web-class').innerHTML);
+
+    // --------------- Day 12 Ends Here------------------------------------------------------- -->
+
+    /**** Section 11👉 EVENTS in JavaScript ****/
+
+
+    // HTML events are "things" that happen to HTML elements.
+    // When JavaScript is used in HTML pages, JavaScript can "react" on these events.
+
+    // 👨‍🏫 HTML Events
+    // An HTML event can be something the browser does, or something a user does.
+
+    // Here are some examples of HTML events:
+
+    // An HTML web page has finished loading
+    // An HTML input field was changed
+    // An HTML button was clicked
+    // Often, when events happen, you may want to do something.
+
+    // JavaScript lets you execute code when events are detected.
+
+    // HTML allows event handler attributes, with JavaScript code, 
+    // to be added to HTML elements.
+
+
+    // section 1️⃣ 4 ways of writing Events in JavaScript
+
+    // 1: using inline events alert();
+    // 2: By Calling a funcion (We already seen and most common way of writing) 
+    // 3: using Inline events (HTML onclick="" property and element.onclick)
+    // 4: using Event Listeners (addEventListener and IE's attachEvent)
+
+
+    // refer to <body>
+    const callKaro = () => {
+        alert('Hello! Muze Call Lagaya Gaya hain!')
+    }
+
+    // By ID
+    const callingID = document.getElementById('callID');
+
+    callingID.onclick = function() {
+        alert('Kisine To meri ID chura ke Call kiya hain')
+    }
+
+    // By Event Listner
+    const caller = document.querySelector('#caller');
+
+    caller.addEventListener('click', () => {
+        alert('Badi Mushkil se Call kiya hain')
+    });
+
+    // section 2️⃣: What is Event Object?
+    // Event object is the parent object of the event object. 
+    // for Example 
+    // MouseEvent, focusEvent, KeyboardEvent etc
+
+
+    // refer to <body>
+    const eventType = document.getElementById('event_listen');
+
+    const checkEvent = () => {
+        alert('Hum Dekh rahe hain Event Object');
+        console.log(event);
+        console.log(event.target);
+        console.log(event.type);
+    }
+
+    eventType.addEventListener('click', checkEvent);
+    // console section bhi dekh lena
+
+
+    // section ️3️⃣ MouseEvent in JavaScript
+    // The MouseEvent Object
+    // Events that occur when the mouse interacts with the HTML 
+    // document belongs to the MouseEvent Object.
+
+    // refer to <body>
+    function mouseDown() {
+        document.getElementById("eventPara").style.color = "red";
+    }
+
+    function mouseUp() {
+        document.getElementById("eventPara").style.color = "green";
+    }
+
+    //refer to <body>
+
+    const eventEnter = document.getElementById('dibba');
+
+    eventEnter.addEventListener('mouseenter', () => {
+        eventEnter.style.backgroundColor = 'hotpink';
+        console.log('You Entered to My Zone')
+    });
+
+    eventEnter.addEventListener('mouseleave', () => {
+        eventEnter.style.backgroundColor = 'yellow';
+        console.log('You left to My Zone')
+    });
+
+    // section ️4️⃣ KeyboardEvent  in JavaScript
+    // Events that occur when user presses a key on the keyboard, 
+    // belongs to the KeyboardEvent Object.
+    // Refer to <body>
+
+    const keyPressed = () => {
+        document.getElementById('keys').innerHTML = `you press ${event.key} and its code is ${event.code}`;
+    }
+
+    // try only one of them
+
+    // const keyDown = () => {
+    //     document.getElementById('keys').innerHTML = 'key is Down';
+    // }
+
+    // const keyUp = () => {
+    //     document.getElementById('keys').innerHTML = 'key is Up';
+    // }
+
+
+    // Section 5️⃣ InputEvents in JavaScript 
+    // The onchange event occurs when the value of an element has been changed.
+
+    // For radiobuttons and checkboxes, the onchange event occurs when the 
+    // checked state has been changed.
+
+    //refer to <body>
+
+    const changeFlav = () => {
+        const inputChange = document.getElementById('icec').value;
+        const iceCreams = document.getElementById('iceCreams').value;
+        const result = document.getElementById('selFav');
+
+        result.innerHTML = `Mr/Mrs ${inputChange} Loves ${iceCreams} Flavour Ice-Cream`;
+
+    }
+
+    // --------------- Day 12 Ends Here-------------------------------------------------------
+
+    // setTimeOut
+
+    // The window object allows execution of code at specified time intervals.
+    // These time intervals are called timing events.
+    // The two key methods to use with JavaScript are:
+
+    // setTimeout(function, milliseconds)
+    // Executes a function, after waiting a specified number of milliseconds.
+
+    const revelName = document.querySelector('#revelName');
+    const showName = document.querySelector('#showName');
+
+    const showMyName = () => {
+        revelName.innerHTML = "Be Ready...";
+        setTimeout(() => {
+            revelName.innerHTML = "You Know"
+        }, 2000)
+    }
+
+    showName.addEventListener('click', showMyName);
+
+    // clearTimeOut
+    // to stop the progress
+    function timeFunction() {
+        alert("Working! its working")
+    }
+
+    // setInterval(function, milliseconds)
+    // Same as setTimeout(), but repeats the execution of the function continuously.
+
+    // SOMETHING WENT WRONG 
+    // DIDNT UNDERSTAND
+    const stopNum = document.querySelector('p');
+    const btn = document.querySelector('#stopMe');
+
+    let num = 0;
+
+    const showMyNum = () => {
+        stopNum.innerHTML = "Loading ..."
+
+        setInterval(() => {
+            stopNum.innerHTML = `${num}`;
+            num++;
+        }, 1000)
+    }
+
+    btn.addEventListener('click', showMyNum);
+    // --------------------- Day 13 Ends Here------------------------------------------------
+</script>
+
+</html>
